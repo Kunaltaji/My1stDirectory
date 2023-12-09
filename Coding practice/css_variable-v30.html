@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables</title>
+    <style>
+        /* root represent the global variables declaration in css */
+        :root{
+            --color: rgb(1, 0, 7) ;
+            --seccolor:rgb(254, 253, 253);
+            --defop:0.2;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: rgb(63, 169, 63);
+            color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: 25px;
+            /* margin: 10px; */
+        }
+        ul li:hover{
+            /* local variable declaration */
+            --color:rgb(254, 253, 254);
+            opacity: 1;
+           background-color: var(--color)
+        }
+        ul li:active{
+            background-color: rgb(223, 245, 238);
+            color: blue;
+            transform: scale(0.8);
+            border: 1px outset black;
+        }
+        .container{
+            background-color: rgb(157, 175, 90);
+            color: var(--seccolor);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Data</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates molestias esse debitis deserunt facilis porro distinctio vel blanditiis delectus? Odio doloremque, facilis est quia libero aliquam labore. Labore, id omnis iste assumenda magni vero eum, distinctio sit illo fugit eaque nisi commodi cum sed! Enim!</div>
+</body>
+</html>

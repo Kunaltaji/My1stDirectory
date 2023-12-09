@@ -1,0 +1,11 @@
+Font sizes
+px - resolution
+vw - viewport width -100 is the max without scroll bar
+vh -viewport height -100 is the max without scroll bar
+em - multiple of container font size(default font size is 16px)
+rem - root element font size( html)
+vmin
+vmax
+min-width
+%
+Note: mdn is a referance for the more font sizes

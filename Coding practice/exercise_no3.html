@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+     .box{
+        position: relative;
+        background-color: gainsboro;
+        width: 400px;
+        margin: 5% auto;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        overflow: hidden auto;
+     }
+     .box .box1{
+        /* display: relative; */
+        background-color: aliceblue;
+        min-height: 90%;
+        border-radius: 20px;
+        padding: 5px;
+        /* overflow: hidden auto; */
+        border: 2px blueviolet solid;
+     }
+     img{
+        min-width: 100%;
+        border-radius: 25px;
+        border: 1px inset red;
+     }
+     .small{
+        border: 1px dashed red;
+        border-radius: 20px;
+        padding:5px;
+        margin:5px;
+     }
+     .Click{
+        display: block;
+        padding: 2px;
+        height: 40px;
+        min-width: 30%;
+        margin: 20px auto;
+        border-radius: 20px;
+     }
+     .Click:hover{
+        transform: scale(0.9);
+        background-color: aquamarine;
+     }
+     .Click:active{
+        background-color: rgb(182, 123, 237);
+     }
+    </style>
+    <title>Design the Card</title>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">   
+            
+            <img src="free-images.avif" alt="cute_girl" width="100%">
+            <button class="small">Nature</button>
+            <button class="small">Photography</button>
+            <h3 style="margin:5px ;" >Cute Photographer</h3>
+            <p style="margin:5px ;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, quod ab! Ipsum deserunt eligendi esse, numquam quibusdam saepe.</p>
+            <button class="Click">Click</button>
+        </div>
+    </div>
+</body>
+</html>

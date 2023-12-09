@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color:beige;
+        }
+        /* Media Query sintax--
+        @media not|only mediatype and (expression){css code} */
+        /* @media only screen and (orientation:landscape){
+            body{background-color: red;}
+        } */
+        @media only screen and (max-width:445px){
+            body{background-color: blue;}
+            .box{
+                flex-direction: column;
+            }
+        }
+        .box{
+            display: flex;
+        }
+        .box .box1{
+            width:344px;
+            height: 344px;
+            background-color: green;
+            margin: 10px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>media query is used create responsive desines...</p> 
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
