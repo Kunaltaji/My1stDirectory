@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="ExpTrack.css">
+</head>
+<body>
+    <div class="full_body">
+        <div class="title">Expense Tracker</div>
+        <div class="container">
+            <div class="expenses">
+                <a href="#" class="buttons"onclick="add_expense_page()">Add Expense</a>
+                <br>
+                <div class="available-expenses">
+                    <div class="sub-title">Expenses</div>
+                    <table class="expense-table" cellspacing="10px" cellpadding="8px 20px">
+                        <tr style="border: 1px solid white">
+                            <td>Amount</td>
+                            <td>Category</td>
+                            <td>Date</td>
+                            <td>Note</td>
+                        </tr>
+                     </table>
+                </div>
+                <form action="#" class="add-new-expense">
+                    <span>
+                        <label for="amount">Amount:</label>
+                        <input type="text" name="amount" id="amount" placeholder="How much?">
+                    </span>
+                    <span>
+                        <label for="category">Category:</label>
+                        <select name="category" id="category">
+                            <option value="food">Food</option>
+                            <option value="traval">Traval</option>
+                            <option value="groceries">Groceries</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </span>
+                    <!-- <span>
+                        <label for="date">Date:</label>
+                        <input type="date" class="form-input" name="date" id="date" >
+                    </span> -->
+                    <!-- <span>
+                        <label for="note">Note:</label>
+                        <input type="text" class="form-input" name="note" id="note" placeholder="How do you want spent yourself?">
+                    </span> -->
+                    <span>
+                        <a href="#" class="buttons" style="font-size : 15px; padding: 8px 10px;" onclick="add_expense()">Submit</a>
+                    </span>
+                </form>
+            </div>
+            <div class="category">
+                <a href="#" class="buttons" onclick="add_category_page()">Add Category</a>
+                <br>
+                <div class="sub-title">
+                    Categories
+                </div>
+                <div class="available-categories">
+                    <span>Food <span class="sum"></span></span>
+                    <span>Travel <span class="sum"></span></span>
+                    <span>Groceries <span class="sum"></span></span>
+                    <span>Entertainment <span class="sum"></span></span>
+                    <span>Others <span class="sum"></span></span>
+                </div>
+                <form action="#" class="add-category">
+                    <span>
+                        <label for="category">Category Name:</label>
+                        <input type="text" name="new-category" class="form-input" placeholder="Enter category name:">
+                    </span>
+                    <span>
+                        <a href="#" class="buttons" onclick="add_category()">Submit</a>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="ExpTrack.js"></script>
+</body>
+</html>
