@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box0:first-child{
+            background-color: rgb(96, 150, 196);
+        }
+        .box1::first-line{
+            color:rgb(255, 106, 0);
+        }
+        .box2::first-letter{
+            font-size: 30px;
+        }
+        .box:nth-child(odd){
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box0">I am a box</div>
+    <div class="box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi qui porro, ex aut beatae voluptatibus aspernatur officia harum sapiente quae! Aperiam minus quae ducimus expedita itaque non maxime beatae? Perferendis laudantium soluta ipsam repellendus excepturi. Itaque quod voluptatem aliquam deleniti consequuntur ipsam reiciendis ea cum et.</div>
+    <div class="box box2">I am a box</div>
+    
+</body>
+</html>
